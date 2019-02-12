@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
     node2.vm.box = "ubuntu/xenial64"
     node2.vm.network "private_network",ip: "192.168.100.4"
   end
- config.vm.define "node2" do |node2|
+ config.vm.define "node3" do |node2|
     node2.vm.box = "ubuntu/xenial64"
     node2.vm.network "private_network",ip: "192.168.100.5"
   end
