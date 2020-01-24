@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
          firstlb.vm.network "private_network",ip: "100.100.100.3"
       end
 
-      config.vm.define "firstlb" do |seclb|
+      config.vm.define "seclb" do |seclb|
          seclb.vm.provision "shell", inline: "chmod 777 /home/vagrant/project1-cilsy/backend.sh"
          seclb.vm.provision "shell", inline: "/bin/sh /home/vagrant/project1-cilsy/backend.sh"
          seclb.vm.box = "ubuntu/bionic64"
